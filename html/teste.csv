@@ -1,0 +1,9 @@
+﻿sep=;
+Vendedor;Data;Horario;DDD;Telefone;CNPJ;Rasao Social;Responsavel;E-mail;Status;Observacoes;
+teste;0000-00-00;23:45:47;45;30371947;asdasd;lugar;alguem;alguem@lugar.com;Negado;huehuehue;
+teste;0000-00-00;23:46:49;11;1231232131;123123;123122;222;222222;Vendido;123213;
+teste;0000-00-00;23:48:52;12;123;123;123;123;2222222222222222222222222;Retorno;2;
+teste;0000-00-00;23:49:09;2;2;2;2;2;2;Negado;2;
+teste;2015-01-29;23:51:20;11;s;2;2;2;2;Negado;uma das coisas que eu mais odeio nessa vida merda é o fato do html existir, como pode tal linguagem ser tão horrivel de trabalhar e ainda assim ser usada por todas as aplicações web disponiveis atualmente, eu não entendo isso;
+alguem;2015-02-01;00:21:56;22;213123;123;213;123;123123;Vendido;123;
+joao;2015-02-01;19:29:38;12;123123;123123;123123;123123;123123;Vendido;123123;
