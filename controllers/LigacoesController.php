@@ -60,18 +60,27 @@ class LigacoesController extends Controller {
             $model = $this->findModel($id);
 
             if ($model->load(Yii::$app->request->post())) {
-                
+                $model_novo = new Ligacoes();
+                $model_novo->load(Yii::$app->request->post());
+
                 $model->retorno = $model->data;
+                $model_novo->retorno = $model_novo->data;
+
                 date_default_timezone_set('America/Sao_Paulo');
+
                 $time = time();
                 $model->data = date('Y:m:d', $time);
                 $model->horario = date('H:i:s', $time);
-                
-                if($model->save()){
-                    return $this->redirect(['view', 'id' => $model->id]);
+
+                $model_novo->data = date('Y:m:d', $time);
+                $model_novo->horario = date('H:i:s', $time);
+                $model_novo->id_usuario = Yii::$app->user->getIdentity()->id;
+
+                if($model_novo->save()){
+                    return $this->redirect(['view', 'id' => $model_novo->id]);
                 }else{
                     return $this->render('retornar', [
-                            'model' => $model,
+                            'model' => $model_novo,
                 ]);
                 }
                 
